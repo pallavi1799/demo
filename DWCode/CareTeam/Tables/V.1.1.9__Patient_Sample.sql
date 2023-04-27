@@ -1,17 +1,17 @@
-CREATE Schema if not exists  DW_STG_POC;
+/*CREATE Schema if not exists  DW_STG_POC;
 
 USE Schema DW_STG_POC;
 
 CREATE TABLE Sample3_Patient_STG
 (Patient_ID NUMBER
 , P_NAME VARCHAR2(10)
-, P_ADDRESS VARCHAR2(300));
+, P_ADDRESS VARCHAR2(300));*/
 
 CREATE Schema if not exists  DW_TGT_POC;
 
 USE Schema DW_TGT_POC;
 
-CREATE TABLE Sample3_Patient_TGT
+/*CREATE TABLE Sample3_Patient_TGT
 (Patient_ID NUMBER
 , P_NAME VARCHAR2(10)
 , P_ADDRESS VARCHAR2(300)
@@ -29,7 +29,7 @@ CREATE TABLE Patient_LKP_1_2
 , P_LANGUAGE VARCHAR2(10)
 , CITY VARCHAR2(20)
 , AREA VARCHAR2
-	);
+	);*/
 
 CREATE TABLE Patient_LKP_1_3
 (Patient_ID NUMBER
