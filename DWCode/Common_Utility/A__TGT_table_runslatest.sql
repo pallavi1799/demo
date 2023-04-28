@@ -1,3 +1,4 @@
+
 CREATE Schema if not exists DW_TGT_POC;
 
 USE Schema DW_TGT_POC;
