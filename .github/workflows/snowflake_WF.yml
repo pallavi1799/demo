@@ -2,11 +2,11 @@ name: dev_env
 # Controls when the action will run. 
 on:
   push:
-    branches: ["Dev"]
+    branches: ["dev"]
     paths:
       - 'DWCode/**'
   #pull_request:
-    #branches: ["Dev"]
+    #branches: ["dev"]
     
   
   # Allows you to run this workflow manually from the Actions tab
@@ -15,7 +15,7 @@ on:
 jobs:
   deploy-snowflake-changes-jobs_Dev:
     runs-on: ubuntu-latest
-    environment: 'Dev'
+    environment: 'dev'
   
     steps:
       - name: Checkout repository
@@ -27,7 +27,7 @@ jobs:
          python-version: 3.8.x
          
       - name: use path yml
-        uses: actions/.github/workflows/Paths.yml
+        uses: Actions/demo/.github/workflows/Paths.yml
     
    # steps:
    #   # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
