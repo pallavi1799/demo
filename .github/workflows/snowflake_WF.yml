@@ -62,7 +62,7 @@ jobs:
   deploy-test:
    runs-on: 'ubuntu-latest'
    environment: 'test'
-   needs: [deploy-snowflake-changes-jobs_Dev]
+   needs: [deploy-snowflake-changes-jobs_dev]
    steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout repository
@@ -79,7 +79,7 @@ jobs:
         run: |
           echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
           python --version
-          echo "Step 3: Running schemachange for Test Env"
+          echo "Step 3: Running schemachange for test Env"
           pip install schemachange
           echo "Step 4: Running schemachange for test"
           
