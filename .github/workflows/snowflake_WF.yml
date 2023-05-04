@@ -27,7 +27,7 @@ jobs:
          python-version: 3.8.x
          
       - name: use path yml
-        uses: Actions/demo/.github/workflows/Paths.yml
+        uses: Actions/demo/.github/workflows/Paths.yml@dev
     
    # steps:
    #   # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
